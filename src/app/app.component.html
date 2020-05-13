@@ -1,0 +1,16 @@
+
+<input type = "text" placeholder="First Number"/>
+<h3>Operator: {{operator}}</h3>
+<input type="text" [(ngModel)]='secondNumber' placeholder="Second Number"/>
+<p>{{equalTo}}</p>
+<input type="text" [(ngModel)]='ResultValue' placeholder="Result"><br><br>
+
+<input type="button" (click)="Addition()" value='+'>
+
+<input type="button" (click)="Subtraction()" value="-"/>
+<input type="button" (click)="Multiply()" value="x"/>
+
+<input type="button" (click)='Percentage()' value='%'/>
+<input type="button" (click)='DivideBy()' value="/"/>
+
+<input type="button" (click)="Clear()" value="Clear"/>
